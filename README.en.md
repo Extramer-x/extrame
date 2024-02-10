@@ -1,7 +1,7 @@
-# Extrame
+# xmshop
 
 #### Description
-extrame
+Extrame
 
 #### Software Architecture
 Software architecture description
