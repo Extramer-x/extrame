@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ASMSmaliIdeaPluginConfiguration">
+    <asm skipDebug="true" skipFrames="true" skipCode="false" expandFrames="false" />
+    <groovy codeStyle="LEGACY" />
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/extrame-parent/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/extrame-parent/extrame-auth/pom.xml" />
+        <option value="$PROJECT_DIR$/extrame-parent/extrame-business/extrame-controller/extrame-controller-article/pom.xml" />
+        <option value="$PROJECT_DIR$/extrame-parent/extrame-business/extrame-controller/extrame-controller-mail/pom.xml" />
+        <option value="$PROJECT_DIR$/extrame-parent/extrame-business/extrame-controller/extrame-controller-user/pom.xml" />
+        <option value="$PROJECT_DIR$/extrame-parent/extrame-business/extrame-controller/pom.xml" />
+        <option value="$PROJECT_DIR$/extrame-parent/extrame-business/extrame-dao/extrame-dao-article/pom.xml" />
+        <option value="$PROJECT_DIR$/extrame-parent/extrame-business/extrame-dao/extrame-dao-room/pom.xml" />
+        <option value="$PROJECT_DIR$/extrame-parent/extrame-business/extrame-dao/extrame-dao-template/pom.xml" />
+        <option value="$PROJECT_DIR$/extrame-parent/extrame-business/extrame-dao/extrame-dao-user/pom.xml" />
+        <option value="$PROJECT_DIR$/extrame-parent/extrame-business/extrame-dao/pom.xml" />
+        <option value="$PROJECT_DIR$/extrame-parent/extrame-business/extrame-service/extrame-service-article/pom.xml" />
+        <option value="$PROJECT_DIR$/extrame-parent/extrame-business/extrame-service/extrame-service-mail/pom.xml" />
+        <option value="$PROJECT_DIR$/extrame-parent/extrame-business/extrame-service/extrame-service-user/pom.xml" />
+        <option value="$PROJECT_DIR$/extrame-parent/extrame-business/extrame-service/pom.xml" />
+        <option value="$PROJECT_DIR$/extrame-parent/extrame-business/pom.xml" />
+        <option value="$PROJECT_DIR$/extrame-parent/extrame-common/extrame-common-db/pom.xml" />
+        <option value="$PROJECT_DIR$/extrame-parent/extrame-common/extrame-common-exception/pom.xml" />
+        <option value="$PROJECT_DIR$/extrame-parent/extrame-common/extrame-common-file/pom.xml" />
+        <option value="$PROJECT_DIR$/extrame-parent/extrame-common/extrame-common-mail/pom.xml" />
+        <option value="$PROJECT_DIR$/extrame-parent/extrame-common/extrame-common-redis/pom.xml" />
+        <option value="$PROJECT_DIR$/extrame-parent/extrame-common/extrame-common-sms/pom.xml" />
+        <option value="$PROJECT_DIR$/extrame-parent/extrame-common/extrame-common-tool/pom.xml" />
+        <option value="$PROJECT_DIR$/extrame-parent/extrame-common/pom.xml" />
+        <option value="$PROJECT_DIR$/extrame-parent/extrame-core/pom.xml" />
+        <option value="$PROJECT_DIR$/extrame-parent/extrame-main/pom.xml" />
+        <option value="$PROJECT_DIR$/extrame-parent/pom.xml" />
+      </set>
+    </option>
+    <option name="workspaceImportForciblyTurnedOn" value="true" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="jpab" />
+  </component>
+</project>
