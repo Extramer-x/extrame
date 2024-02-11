@@ -1,9 +1,8 @@
-package top.extrame.core.domain.module.asserts;
+package top.extrame.core.model.asserts;
 
 import org.apache.commons.lang3.StringUtils;
 import top.extrame.common.util.ValidatorUtils;
-import top.extrame.core.domain.module.asserts.base.BaseAssert;
-import top.extrame.core.domain.pojo.exception.BusinessException;
+import top.extrame.core.pojo.exception.BusinessException;
 
 /**
  * BusinessAssert

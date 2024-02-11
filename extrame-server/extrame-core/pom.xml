@@ -24,9 +24,11 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-configuration-processor</artifactId>
         </dependency>
+
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot</artifactId>
+            <groupId>top.extrame.common</groupId>
+            <artifactId>extrame-common</artifactId>
+            <version>1.0</version>
         </dependency>
 
         <dependency>
@@ -34,24 +36,19 @@
             <artifactId>lombok</artifactId>
             <scope>provided</scope>
         </dependency>
-
-        <dependency>
-            <groupId>top.extrame.common</groupId>
-            <artifactId>extrame-common</artifactId>
-            <version>1.0</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-autoconfigure</artifactId>
-        </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-web</artifactId>
         </dependency>
         <dependency>
-            <groupId>jakarta.xml.bind</groupId>
-            <artifactId>jakarta.xml.bind-api</artifactId>
-            <version>2.3.3</version>
+            <groupId>jakarta.validation</groupId>
+            <artifactId>jakarta.validation-api</artifactId>
+            <version>3.0.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>6.1.3</version>
         </dependency>
     </dependencies>
 </project>

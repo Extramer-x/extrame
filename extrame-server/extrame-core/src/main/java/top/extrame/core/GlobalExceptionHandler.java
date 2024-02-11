@@ -1,7 +1,7 @@
-package top.extrame.core.domain;
+package top.extrame.core;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import jakarta.validation.ValidationException;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.ConversionNotSupportedException;
 import org.springframework.beans.TypeMismatchException;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,21 +9,23 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.http.converter.HttpMessageNotWritableException;
 import org.springframework.validation.BindException;
+import org.springframework.web.HttpMediaTypeNotAcceptableException;
+import org.springframework.web.HttpMediaTypeNotSupportedException;
+import org.springframework.web.HttpRequestMethodNotSupportedException;
 import org.springframework.web.bind.MethodArgumentNotValidException;
+import org.springframework.web.bind.MissingPathVariableException;
+import org.springframework.web.bind.MissingServletRequestParameterException;
+import org.springframework.web.bind.ServletRequestBindingException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.context.request.async.AsyncRequestTimeoutException;
+import org.springframework.web.multipart.support.MissingServletRequestPartException;
 import top.extrame.common.pojo.ResponseResult;
-import top.extrame.core.domain.module.enums.ResponseEnum;
-import top.extrame.core.domain.pojo.exception.ArgumentException;
-import top.extrame.core.domain.pojo.exception.BusinessException;
-import top.extrame.core.domain.pojo.exception.CommonException;
-import top.extrame.core.domain.pojo.exception.ServletException;
-import top.extrame.core.domain.pojo.exception.base.BaseException;
-import top.extrame.core.domain.pojo.message.UnifiedMessageSource;
-import top.extrame.core.domain.pojo.response.CommonResponse;
+import top.extrame.core.enums.CommonResponse;
+import top.extrame.core.model.enums.ResponseEnum;
+import top.extrame.core.pojo.exception.*;
+import top.extrame.core.pojo.message.UnifiedMessageSource;
 
-import javax.xml.bind.ValidationException;
 import java.util.Locale;
 
 /**
@@ -31,10 +33,9 @@ import java.util.Locale;
  *
  * @author jx
  */
+@Slf4j
 @RestControllerAdvice
 public class GlobalExceptionHandler {
-
-    private static final Logger log = LoggerFactory.getLogger(GlobalExceptionHandler.class);
 
     private static final String ENV_PROD = "prod";
 
@@ -128,20 +129,38 @@ public class GlobalExceptionHandler {
     }
 
     /**
+     * Handle base exception response result.
+     *
+     * @param e the e
+     * @return the response result
+     */
+    @ExceptionHandler(ValidationException.class)
+    public ResponseResult<Void> handleValidationException(ValidationException e) {
+        log.error(e.getMessage(), e);
+        return CommonResponse.ERROR.getResult();
+    }
+
+    /**
      * 聚合异常统一处理
      *
      * @param e Exception
      * @return ResponseResult<Void>
      */
     @ExceptionHandler({
+            HttpRequestMethodNotSupportedException.class,
+            HttpMediaTypeNotSupportedException.class,
+            HttpMediaTypeNotAcceptableException.class,
             HttpMessageNotReadableException.class,
             HttpMessageNotWritableException.class,
+            MissingPathVariableException.class,
+            MissingServletRequestParameterException.class,
             TypeMismatchException.class,
             BindException.class,
             MethodArgumentNotValidException.class,
+            ServletRequestBindingException.class,
             ConversionNotSupportedException.class,
-            AsyncRequestTimeoutException.class,
-            ValidationException.class
+            MissingServletRequestPartException.class,
+            AsyncRequestTimeoutException.class
     })
     public ResponseResult<Void> handleServletException(Exception e) {
         log.error(e.getMessage(), e);

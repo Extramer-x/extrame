@@ -1,5 +1,4 @@
-package top.extrame.core.domain.pojo.exception.base;
-
+package top.extrame.core.pojo.exception;
 
 import lombok.Getter;
 import top.extrame.common.model.Result;

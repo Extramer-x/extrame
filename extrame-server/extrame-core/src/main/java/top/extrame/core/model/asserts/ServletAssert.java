@@ -1,11 +1,9 @@
-package top.extrame.core.domain.module.asserts;
+package top.extrame.core.model.asserts;
 
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.lang.Nullable;
-
 import top.extrame.common.model.Result;
-import top.extrame.core.domain.module.asserts.base.BaseAssert;
-import top.extrame.core.domain.pojo.exception.ServletException;
+import top.extrame.core.pojo.exception.ServletException;
 
 /**
  * ServletAssert

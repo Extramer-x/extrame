@@ -35,8 +35,6 @@
         <fastjson2>2.0.45</fastjson2>
         <jasypt>3.0.5</jasypt>
         <beetl>3.15.0.RELEASE</beetl>
-        <fastdfs>1.27.2</fastdfs>
-        <jnanoid>2.0.0</jnanoid>
     </properties>
 
     <dependencyManagement>
@@ -47,10 +45,6 @@
                 <version>${fastjson2}</version>
             </dependency>
             <dependency>
-                <groupId>com.nimbusds</groupId>
-                <artifactId>nimbus-jose-jwt</artifactId>
-            </dependency>
-            <dependency>
                 <groupId>com.github.ulisesbocchio</groupId>
                 <artifactId>jasypt-spring-boot-starter</artifactId>
                 <version>${jasypt}</version>
@@ -59,11 +53,6 @@
                 <groupId>com.ibeetl</groupId>
                 <artifactId>beetl</artifactId>
                 <version>${beetl}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.github.tobato</groupId>
-                <artifactId>fastdfs-client</artifactId>
-                <version>${fastdfs}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

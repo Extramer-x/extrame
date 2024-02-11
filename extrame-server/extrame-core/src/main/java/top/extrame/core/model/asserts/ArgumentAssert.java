@@ -1,7 +1,6 @@
-package top.extrame.core.domain.module.asserts;
+package top.extrame.core.model.asserts;
 
-import top.extrame.core.domain.module.asserts.base.BaseAssert;
-import top.extrame.core.domain.pojo.exception.ArgumentException;
+import top.extrame.core.pojo.exception.ArgumentException;
 
 /**
  * 参数维护

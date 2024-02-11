@@ -1,9 +1,9 @@
-package top.extrame.core.domain.pojo.response;
+package top.extrame.core.enums;
 
 
-import top.extrame.core.domain.module.asserts.ServletAssert;
-import top.extrame.core.domain.module.enums.ResponseEnum;
-import top.extrame.core.domain.pojo.exception.ServletException;
+import top.extrame.core.model.asserts.ServletAssert;
+import top.extrame.core.model.enums.ResponseEnum;
+import top.extrame.core.pojo.exception.ServletException;
 
 /**
  * servlet响应枚举

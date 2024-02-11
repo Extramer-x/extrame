@@ -1,4 +1,4 @@
-package top.extrame.core.domain;
+package top.extrame.core.content;
 
 /**
  * The type RedisContent.

@@ -1,4 +1,4 @@
-package top.extrame.core.domain.module.enums;
+package top.extrame.core.model.enums;
 
 
 import top.extrame.common.model.Result;

@@ -1,7 +1,6 @@
-package top.extrame.core.domain.pojo.exception;
+package top.extrame.core.pojo.exception;
 
-import top.extrame.core.domain.module.enums.ResponseEnum;
-import top.extrame.core.domain.pojo.exception.base.BaseException;
+import top.extrame.core.model.enums.ResponseEnum;
 
 import java.io.Serial;
 import java.io.Serializable;

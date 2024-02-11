@@ -1,7 +1,7 @@
-package top.extrame.core.domain.module.asserts.base;
+package top.extrame.core.model.asserts;
 
 import org.springframework.lang.Nullable;
-import top.extrame.core.domain.pojo.exception.base.BaseException;
+import top.extrame.core.pojo.exception.BaseException;
 
 import java.util.Collection;
 

@@ -1,4 +1,4 @@
-package top.extrame.core.domain.pojo.message;
+package top.extrame.core.pojo.message;
 
 import org.springframework.boot.autoconfigure.context.MessageSourceProperties;
 import org.springframework.context.support.ReloadableResourceBundleMessageSource;

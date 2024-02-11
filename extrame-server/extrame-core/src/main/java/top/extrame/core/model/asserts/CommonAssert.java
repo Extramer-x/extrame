@@ -1,8 +1,7 @@
-package top.extrame.core.domain.module.asserts;
+package top.extrame.core.model.asserts;
 
 import top.extrame.common.model.Result;
-import top.extrame.core.domain.module.asserts.base.BaseAssert;
-import top.extrame.core.domain.pojo.exception.CommonException;
+import top.extrame.core.pojo.exception.CommonException;
 
 /**
  * CommonAssert

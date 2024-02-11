@@ -1,7 +1,6 @@
 package top.extrame.common.util;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 
 import javax.crypto.Cipher;
 import java.nio.charset.StandardCharsets;
@@ -18,9 +17,9 @@ import java.util.Base64;
 /**
  * RSA工具类
  */
+@Slf4j
 public class RSAUtils {
 
-    private static final Logger log = LoggerFactory.getLogger(RSAUtils.class);
     private static final String ALGORITHM = "RSA";
     private static final int SIZE = 2048;
     private static final KeyPairGenerator keyPairGenerator;

@@ -1,9 +1,9 @@
-package top.extrame.core.domain.pojo.response;
+package top.extrame.core.enums;
 
 
-import top.extrame.core.domain.module.asserts.CommonAssert;
-import top.extrame.core.domain.module.enums.ResponseEnum;
-import top.extrame.core.domain.pojo.exception.CommonException;
+import top.extrame.core.model.asserts.CommonAssert;
+import top.extrame.core.model.enums.ResponseEnum;
+import top.extrame.core.pojo.exception.CommonException;
 
 /**
  * CommonResponseEnum
