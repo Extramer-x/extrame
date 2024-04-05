@@ -123,3 +123,4 @@ bower_components
 
 psd
 thumb
+!/.idea/
